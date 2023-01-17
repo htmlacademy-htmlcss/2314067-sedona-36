@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Лисунов](https://up.htmlacademy.ru/htmlcss/36/user/2314067).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 
 ---
 
