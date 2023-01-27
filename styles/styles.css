@@ -16,6 +16,71 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  line height: 28px;
-  line height: 90%;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.welcome-block {
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sedona-features {
+  text-align: center;
+}
+
+.sedona-features h2,
+{
+font-family: "PT Sans", sans-serif;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+color: #000000;
+text-transform: uppercase;
+}
+
+.features-town,
+.features-mountains {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.features-town h3,
+.features-mountains h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.features-town p,
+.features-mountains p {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.features-item {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+
 }
