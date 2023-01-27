@@ -16,6 +16,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -39,6 +40,28 @@ body {
   text-transform: capitalize;
 }
 
+button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+}
+
+.navigation-enter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
+  gap: 10px;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+}
+
 .welcome-block {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
@@ -49,8 +72,7 @@ body {
   text-align: center;
 }
 
-.sedona-features h2,
-{
+.sedona-features h2 {
 font-family: "PT Sans", sans-serif;
 font-weight: 700;
 font-size: 30px;
@@ -82,5 +104,15 @@ text-transform: uppercase;
 .features-item {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
+}
 
+.features-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.features-item p {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
