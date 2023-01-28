@@ -19,12 +19,20 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #756157;
+  text-decoration: none;
 }
 
 .page-header {
   color: #000000;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .navigation-link {
@@ -32,7 +40,7 @@ body {
   line-height: 24px;
   font-size: 20px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
   text-decoration: none;
 }
@@ -41,9 +49,6 @@ body {
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
-  color: #FFFFFF;
-  background-color: #756157;
-  text-transform: uppercase;
 }
 
 .welcome-block {
@@ -70,7 +75,7 @@ body {
 
 .features-town,
 .features-mountains {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #82B3D3;
 }
 
@@ -85,7 +90,6 @@ body {
 .features-mountains p {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .features-item {
@@ -104,28 +108,23 @@ body {
 .amenities-item p {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .amenities-list {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.button-find-hotels {
-  background-color: #756157;
-  color: #FFFFFF;
+.find-hotels {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .newsletter {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -139,20 +138,17 @@ body {
 .newsletter p {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
 }
 
 .newsletter-button {
-  color: #FFFFFF;
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .page-footer a {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
   text-align: center;
 }
@@ -164,7 +160,6 @@ body {
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
   text-decoration: none;
 }
 
