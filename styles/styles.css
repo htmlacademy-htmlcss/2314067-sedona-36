@@ -61,8 +61,7 @@ body {
 }
 
 .sedona-features h2,
-.sedona h2,
-.interest h2 {
+.sedona h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -109,6 +108,19 @@ body {
 
 .amenities-list {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.interest h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.interest p {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .find-hotels {
@@ -163,3 +175,5 @@ body {
 .page-footer .htmlacademy-link {
   text-decoration: none;
 }
+
+/* Каталог */
