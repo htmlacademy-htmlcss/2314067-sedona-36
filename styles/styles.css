@@ -71,7 +71,7 @@ body {
 .features-town,
 .features-mountains {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .features-town h3 {
@@ -203,3 +203,48 @@ body {
 }
 
 /* Каталог */
+.hotels-main-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #000000; /*должен быть белый */
+}
+
+.filter-block {
+  background: url("../images/catalog-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+}
+ .hotels-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+ }
+
+ .filter-label {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+ }
+
+ .form-submit {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+ }
+
+ .form-reset {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+ }
