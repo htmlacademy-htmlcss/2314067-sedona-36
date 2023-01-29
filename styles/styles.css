@@ -25,7 +25,7 @@ body {
 }
 
 .button {
-  font: inherit;
+  font-family: inherit;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
@@ -60,8 +60,7 @@ body {
   background-size: 100% auto;
 }
 
-.sedona-features h2,
-.sedona h2 {
+.sedona-features h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -75,14 +74,23 @@ body {
   background-color: #82B3D3;
 }
 
-.features-town h3,
+.features-town h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.features-town p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .features-mountains h3 {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.features-town p,
 .features-mountains p {
   font-size: 18px;
   line-height: 21px;
@@ -92,7 +100,30 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.features-item h3,
+.features-item h3 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.features-item p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sedona h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.amenities-list {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .amenities-item h3 {
   color: #000000;
   font-size: 24px;
@@ -100,14 +131,9 @@ body {
   text-transform: uppercase;
 }
 
-.features-item p,
 .amenities-item p {
   font-size: 18px;
   line-height: 21px;
-}
-
-.amenities-list {
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .interest h2 {
