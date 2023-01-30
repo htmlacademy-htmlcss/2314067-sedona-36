@@ -25,7 +25,7 @@ body {
 }
 
 .button {
-  font-family: inherit;
+  font: inherit;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
@@ -175,6 +175,10 @@ body {
   line-height: 26px;
 }
 
+.newsletter-email {
+  font: inherit;
+}
+
 .newsletter-button {
   background-color: #82B3D3;
   font-size: 20px;
@@ -235,6 +239,7 @@ body {
 }
 
 .form-submit {
+  font: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -244,6 +249,7 @@ body {
 }
 
 .form-reset {
+  font: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
