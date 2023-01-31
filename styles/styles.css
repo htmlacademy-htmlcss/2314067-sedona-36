@@ -110,52 +110,48 @@ body {
   background-position: center bottom, center;
 }
 
-.sedona-features h2 {
+/* Sedona Introduction */
+
+.sedona-features-text {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0 290px;
+  margin-bottom: 25px;
 }
 
+.sedona-features-description {
+  margin: 0 auto;
+  margin-bottom: 69px;
+}
+
+/*
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+*/
 .features-item {
   background-color: rgba(5, 55, 88, 0.12);
   margin: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  height: 385px;
+  padding: 0;
 }
 
 .features-item h3 {
   color: #000000;
   font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  height: 56px;
-  width: 230px;
 }
 
 .features-item p {
   font-size: 18px;
   line-height: 21px;
-  height: 63px;
-  width: 230px;
 }
 
 .sedona-town {
   background-color: #82b3d3;
   color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  height: 384px;
-}
-
-.features-town {
-  width: 230px;
-  height: 181px;
-  padding: 102px 85px 102px 85px;
 }
 
 .features-town h3 {
@@ -173,16 +169,6 @@ body {
 .sedona-mountains {
   background-color: #82b3d3;
   color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  height: 384px;
-}
-
-.features-mountains {
-  width: 230px;
-  height: 181px;
-  padding: 102px 85px 102px 85px;
 }
 
 .features-mountains h3 {
@@ -190,15 +176,11 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: inherit;
-  height: 56px;
-  width: 230px;
 }
 
 .features-mountains p {
   font-size: 18px;
   line-height: 21px;
-  height: 63px;
-  width: 230px;
 }
 
 .sedona h2 {
@@ -207,6 +189,22 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+}
+
+/* Sedona Amenities */
+
+.sedona-features-amenities-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 348px;
+  margin-bottom: 20px;
+}
+
+.sedona-features-amenities {
+  margin: 0 auto;
 }
 
 .amenities-list {
