@@ -50,6 +50,26 @@ body {
   text-align: left;
 }
 
+/* navigation panel */
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+  /*в фгиме 862px*/
+}
+
 .navigation-link {
   font-weight: 700;
   line-height: 24px;
@@ -60,16 +80,34 @@ body {
   text-decoration: none;
 }
 
+/* user panel*/
+
 .navigation-enter {
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
 }
 
+/* main block */
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-block-title {
+  display: block;
+  margin: 0 auto;
+}
+
 .welcome-block {
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  width: 1200px;
+  height: 485px;
+  margin: 0 auto;
+  background-color: #82b3d3;
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
 }
 
 .sedona-features h2 {
@@ -81,7 +119,12 @@ body {
 }
 
 .features-item {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(5, 55, 88, 0.12);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 385px;
 }
 
 .features-item h3 {
@@ -89,24 +132,30 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  height: 56px;
+  width: 230px;
 }
 
 .features-item p {
   font-size: 18px;
   line-height: 21px;
-}
-
-.sedona h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  text-transform: uppercase;
+  height: 63px;
+  width: 230px;
 }
 
 .sedona-town {
   background-color: #82b3d3;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 384px;
+}
+
+.features-town {
+  width: 230px;
+  height: 181px;
+  padding: 102px 85px 102px 85px;
 }
 
 .features-town h3 {
@@ -124,6 +173,16 @@ body {
 .sedona-mountains {
   background-color: #82b3d3;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 384px;
+}
+
+.features-mountains {
+  width: 230px;
+  height: 181px;
+  padding: 102px 85px 102px 85px;
 }
 
 .features-mountains h3 {
@@ -131,11 +190,23 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: inherit;
+  height: 56px;
+  width: 230px;
 }
 
 .features-mountains p {
   font-size: 18px;
   line-height: 21px;
+  height: 63px;
+  width: 230px;
+}
+
+.sedona h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .amenities-list {
