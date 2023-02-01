@@ -102,7 +102,7 @@ body {
 
 .welcome-block {
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   margin: 0 auto;
   background-color: #82b3d3;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
@@ -117,6 +117,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .features-item {
