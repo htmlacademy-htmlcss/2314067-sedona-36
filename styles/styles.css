@@ -112,18 +112,6 @@ body {
 
 /* Sedona Features */
 
-.features-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-.features-item {
-  width: 400px;
-}
-
 .sedona-features-title {
   font-weight: 700;
   font-size: 30px;
@@ -140,9 +128,25 @@ body {
   margin-bottom: 69px;
 }
 
+.features-town {
+  width: 230px;
+  height: 180px; /* согласно макету должно быть 181, но тогда сумма не совпадает с размером картинки */
+  padding: 102px 85px 102px 85px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
 .features-town-item {
   background-color: #82b3d3;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .features-town-title {
@@ -160,16 +164,32 @@ body {
   background-color: rgba(5, 55, 88, 0.12);
   margin: 0;
   padding: 0;
+  width: 400px;
+  height: 385px;
 }
 
 .features-item-title {
   color: #000000;
   font-size: 24px;
+  margin: 113px 113px 62px 113px;
 }
 
 .features-item-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0 113px 113px 85px;
+  width: 230px;
+}
+
+.features-mountains-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-mountains {
+  margin-left: 0;
+  height: 181px;
+  padding: 102px 85px 102px 85px;
 }
 
 .features-mountains-item {
@@ -190,6 +210,22 @@ body {
 
 /* Sedona Amenities */
 
+.sedona-amenities-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 348px;
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+
+.sedona-amenities-text {
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
 .amenities-list {
   background-color: rgba(131, 179, 211, 0.12);
   display: flex;
@@ -200,21 +236,6 @@ body {
 
 .amenities-item {
   width: 400px;
-
-}
-
-.sedona-amenities-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 0 348px;
-  margin-bottom: 20px;
-}
-
-.sedona-amenities-text {
-  margin: 0 auto;
 }
 
 .amenities-item-title {
@@ -231,17 +252,21 @@ body {
 
 /* Interest? */
 
+.interest {
+  height: 406px;
+}
+
 .interest-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 96px 452px 20px 452px;
 }
 
 .interest-text {
-  font-size: 22px;
-  line-height: 26px;
+  margin: 0 304px 54px 304px;
 }
 
 .find-hotels {
