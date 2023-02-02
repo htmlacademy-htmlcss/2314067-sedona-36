@@ -332,6 +332,12 @@ body {
   margin: 0 auto;
 }
 
+.footer-social {
+  width: 142px;
+  margin-left: 82px;
+  margin-right: 237px;
+}
+
 .page-footer a {
   background-color: #ffffff;
   color: #000000;
@@ -346,6 +352,11 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+.footer-logo {
+  margin-left: 234px;
+  max-width: 115px;
 }
 
 .page-footer .htmlacademy-link {
