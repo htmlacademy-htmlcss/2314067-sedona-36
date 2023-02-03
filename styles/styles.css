@@ -20,16 +20,23 @@ html {
 
 body {
   margin: 0;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-weight: 400;
   text-align: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
+  background-color: #ffffff;
 }
 
 .main-container {
@@ -47,16 +54,12 @@ body {
 
 .page-header {
   color: #000000;
-  background: #ffffff;
-  text-align: left;
 }
 
 /* Navigation Panel */
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -68,7 +71,6 @@ body {
 .navigation-user {
   max-width: 268px;
   margin-left: auto;
-  /*в фгиме 862px*/
 }
 
 .navigation-link {
@@ -76,7 +78,6 @@ body {
   line-height: 24px;
   font-size: 20px;
   color: #000000;
-  background-color: #ffffff;
   text-align: center;
   text-decoration: none;
 }
@@ -90,11 +91,6 @@ body {
 }
 
 /* Main Block */
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .welcome-block-title {
   display: block;
@@ -119,9 +115,7 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 290px;
-  margin-bottom: 25px;
-  margin-top: 69px;
+  margin: 69px 290px 25px 290px;
 }
 
 .sedona-features-text {
@@ -131,7 +125,8 @@ body {
 
 .features-town {
   width: 230px;
-  height: 180px; /* согласно макету должно быть 181, но тогда сумма не совпадает с размером картинки */
+  height: 180px;
+  /* согласно макету должно быть 181, но тогда сумма не совпадает с размером картинки */
   padding: 102px 85px 102px 85px;
 }
 
@@ -143,7 +138,7 @@ body {
   flex-wrap: wrap;
 }
 
-.features-town-item {
+.town-item {
   background-color: #82b3d3;
   color: #ffffff;
   display: flex;
@@ -161,28 +156,33 @@ body {
   line-height: 21px;
 }
 
-.features-item {
-  background-color: rgba(5, 55, 88, 0.12);
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  height: 385px;
+.square-item,
+.road-item,
+.tourists-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 230px;
+  padding: 113px 85px 113px 85px;
+}
+
+.road-item {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .features-item-title {
   color: #000000;
   font-size: 24px;
-  margin: 113px 113px 62px 113px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .features-item-text {
   font-size: 18px;
   line-height: 21px;
-  margin: 0 113px 113px 85px;
-  width: 230px;
 }
 
-.features-mountains-item {
+.mountains-item {
+  background-color: #82b3d3;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
@@ -217,9 +217,7 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 348px;
-  margin-top: 64px;
-  margin-bottom: 20px;
+  margin: 64px 348px 20px 348px;
 }
 
 .sedona-amenities-text {
@@ -253,26 +251,18 @@ body {
 
 /* Interest? */
 
-.interest {
-  display: flex;
-  flex-wrap: wrap;
-  height: 406px;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
 .interest-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 96px 452px 20px 452px;
+  margin: 96px 304px 54px 304px;
 }
 
 .interest-text {
-  margin: 0 304px 54px 304px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .find-hotels {
@@ -284,8 +274,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 0;
-  margin: 0 412px 96px 412px;
 }
 
 /* Newsletter */
@@ -293,11 +281,6 @@ body {
 .newsletter {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
-  height: 415px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -311,7 +294,10 @@ body {
   margin: 0;
 }
 
-/* .newsletter-text {} */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
 
 .newsletter-email {
   font: inherit;
@@ -363,7 +349,8 @@ body {
   text-decoration: none;
 }
 
-/* Каталог */
+/* Catalog */
+
 .hotels-main-title {
   font-size: 60px;
   line-height: 78px;
