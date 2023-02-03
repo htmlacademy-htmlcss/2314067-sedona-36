@@ -58,6 +58,11 @@ body {
 
 /* Navigation Panel */
 
+.header-logo {
+  margin-right: 28px;
+  margin-left: 70px;
+}
+
 .navigation {
   display: flex;
 }
@@ -364,23 +369,34 @@ body {
 
 /* Catalog */
 
-.hotels-main-title {
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
-  color: #000000;
-  /*должен быть белый */
-}
-
 .filter-block {
   background: url("../images/catalog-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-main-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 495px;
+  padding: 35px 635px 8px 70px;
+  margin: 0;
 }
 
 .breadcrumbs {
   color: #ffffff;
+  padding: 0 1016px 40px 70px;
+  margin: 0;
+}
+
+.filter-form {
+  width: 371px;
+  margin-right: 140px;
 }
 
 .hotels-filter-title {
@@ -413,6 +429,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+/* Main Block */
 
 .sort-method-head {
   font-size: 30px;
