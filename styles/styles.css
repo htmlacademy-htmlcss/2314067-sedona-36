@@ -115,7 +115,8 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 69px 290px 25px 290px;
+  padding: 69px 290px 25px 290px;
+  margin: 0;
 }
 
 .sedona-features-text {
@@ -217,7 +218,8 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 64px 348px 20px 348px;
+  padding: 64px 348px 20px 348px;
+  margin: 0;
 }
 
 .sedona-amenities-text {
@@ -226,15 +228,23 @@ body {
 }
 
 .amenities-list {
-  background-color: rgba(131, 179, 211, 0.12);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
-.amenities-item {
-  width: 400px;
+.house-item,
+.food-item,
+.souvenir-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 230px;
+  padding: 81px 85px 81px 85px;
+}
+
+.food-item {
+  background-color: #ffffff;
 }
 
 .amenities-item-title {
@@ -257,12 +267,13 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 96px 304px 54px 304px;
+  padding: 96px 304px 20px 304px;
+  margin: 0;
 }
 
 .interest-text {
-  margin: 0 auto;
-  margin-bottom: 54px;
+  margin: 0 304px 0 304px;
+  padding-bottom: 54px;
 }
 
 .find-hotels {
@@ -270,10 +281,12 @@ body {
   font-weight: 700;
   line-height: 36px;
   width: 376px;
-  height: 52px;
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin: 0 412px 0 412px;
+  margin-bottom: 96px;
 }
 
 /* Newsletter */
