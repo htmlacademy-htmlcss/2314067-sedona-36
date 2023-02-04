@@ -19,7 +19,8 @@ html {
 }
 
 body {
-  margin: 0;
+  width: 1280px;
+  margin: 0 auto;
   height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -502,7 +503,9 @@ body {
   background-color: #f2f2f2;
 }
 
-.catalog-newsletter h2 {
+/* Catalog Newsletter */
+
+.catalog-newsletter-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
