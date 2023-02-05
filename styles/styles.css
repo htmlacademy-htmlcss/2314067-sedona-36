@@ -168,8 +168,12 @@ body {
   line-height: 20px;
   font-size: 16px;
   border-radius: 4px;
+  width: 92px;
+  padding: 8px 34px 8px 34px;
+}
+
+.navigation-enter-item {
   width: 160px;
-  padding: 8px 0 8px 0;
   margin: 14px 0 14px 20px;
 }
 
@@ -178,6 +182,8 @@ body {
 .welcome-block-title {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  margin-bottom: 82px;
 }
 
 .welcome-block {
@@ -192,34 +198,40 @@ body {
 
 /* Sedona Features */
 
+.sedona-features-item {
+  padding: 69px 275px 69px 275px;
+  margin: 0;
+}
+
 .sedona-features-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  padding: 69px 290px 25px 290px;
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 
 .sedona-features-text {
-  margin: 0 auto;
-  margin-bottom: 69px;
+  width: 651px;
+  margin: 0;
 }
-
-.features-town {
-  width: 230px;
-  height: 180px;
-  /* согласно макету должно быть 181, но тогда сумма не совпадает с размером картинки */
-  padding: 102px 85px 102px 85px;
-}
+/* Sedona Features List */
 
 .features-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 21px 0 0 0;
   flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.features-town {
+  width: 230px;
+  min-height: 181px;
+  padding: 102px 85px 102px 85px;
+  margin: 0;
 }
 
 .town-item {
@@ -233,11 +245,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0 28px 30px 28px;
 }
 
 .features-town-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .square-item,
@@ -245,7 +259,9 @@ body {
 .tourists-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 230px;
+  min-height: 160px;
   padding: 113px 85px 113px 85px;
+  margin: 0;
 }
 
 .road-item {
@@ -257,11 +273,22 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0 28px 30px 28px;
 }
 
 .features-item-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+}
+
+/* Sedona Mountains */
+
+.features-mountains {
+  width: 230px;
+  min-height: 181px;
+  padding: 102px 85px 102px 85px;
+  margin: 0;
 }
 
 .mountains-item {
@@ -271,26 +298,17 @@ body {
   justify-content: space-between;
 }
 
-.features-mountains {
-  margin-left: 0;
-  height: 181px;
-  padding: 102px 85px 102px 85px;
-}
-
-.features-mountains-item {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
-
 .features-mountains-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0 28px 30px 28px;
 }
 
 .features-mountains-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 /* Sedona Amenities */
