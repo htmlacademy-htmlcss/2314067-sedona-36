@@ -313,25 +313,32 @@ body {
 
 /* Sedona Amenities */
 
+.sedona-amenities-item {
+  padding: 64px 348px 64px 348px;
+  margin: 0;
+}
+
 .sedona-amenities-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  padding: 64px 348px 20px 348px;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .sedona-amenities-text {
-  margin: 0 auto;
-  margin-bottom: 64px;
+  width: 505px;
+  margin: 0;
 }
+
+/* Sedona Amenities List */
 
 .amenities-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -341,7 +348,9 @@ body {
 .souvenir-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 230px;
+  min-height: 223px;
   padding: 81px 85px 81px 85px;
+  margin: 0;
 }
 
 .food-item {
@@ -353,14 +362,21 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 30px 0 30px 0;
 }
 
 .amenities-item-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 /* Interest? */
+
+.interest {
+  padding: 96px 304px 96px 304px;
+  margin: 0;
+}
 
 .interest-title {
   font-weight: 700;
@@ -368,26 +384,21 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  padding: 96px 304px 20px 304px;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .interest-text {
-  margin: 0 304px 0 304px;
-  padding-bottom: 54px;
+  margin: 0 0 54px 0;
+  width: 592px;
 }
 
 .find-hotels {
-  font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  width: 376px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: 0 412px 0 412px;
-  margin-bottom: 96px;
+  font-size: 20px;
+  border-radius: 4px;
+  width: 276px;
+  padding: 8px 50px 8px 50px;
 }
 
 /* Newsletter */
@@ -396,8 +407,9 @@ body {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   color: #ffffff;
+  height: 100%;
+  padding: 96px 258px 104px 258px;
   margin: 0;
-  padding: 0;
 }
 
 .newsletter-title {
@@ -405,7 +417,11 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0 20px 0;
+}
+
+.newsletter-text {
+  margin: 0 0 54px 0;
 }
 
 .newsletter-form {
@@ -427,25 +443,51 @@ body {
 /* Footer */
 
 .page-footer {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  min-height: 120px;
 }
 
 .footer-social {
-  width: 142px;
-  margin-left: 82px;
-  margin-right: 237px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-vk,
+.social-telegram,
+.social-youtube {
+  width: 47px;
+  height: 40px;
+}
+
+.social-vk {
+  background-image: url("../images/social/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-telegram {
+  background-image: url("../images/social/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-youtube {
+  background-image: url("../images/social/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button {
+  display: block;
+  text-decoration: none;
 }
 
 .page-footer a {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
-}
-
-.social-button {
-  text-decoration: none;
 }
 
 .contacts-phone {
