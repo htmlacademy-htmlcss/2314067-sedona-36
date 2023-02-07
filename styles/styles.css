@@ -57,7 +57,7 @@ body {
 
 .page-header {
   color: #000000;
-  max-height: 64px;
+  margin-bottom: -28px;
 }
 
 .visually-hidden {
@@ -401,13 +401,21 @@ body {
 
 /* Newsletter */
 
+.newsletter,
+.catalog-newsletter {
+  height: 100%;
+  padding: 96px 258px 104px 258px;
+  margin: 0;
+}
+
 .newsletter {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   color: #ffffff;
-  height: 100%;
-  padding: 96px 258px 104px 258px;
-  margin: 0;
+}
+
+.catalog-newsletter-title {
+  color: #000000;
 }
 
 .newsletter-title {
@@ -664,7 +672,8 @@ body {
   margin-right: 8px;
 }
 
-.pagination-link {
+.pagination-link,
+.pagination-text {
   display: block;
   box-sizing: border-box;
   width: 60px;
@@ -678,17 +687,12 @@ body {
   text-decoration: none;
 }
 
+.pagination-text {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
-}
-
-/* Catalog Newsletter */
-
-.catalog-newsletter-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
