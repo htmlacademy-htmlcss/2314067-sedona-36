@@ -73,6 +73,10 @@ body {
 
 /* Navigation Panel */
 
+.navigation {
+  display: flex;
+}
+
 .header-logo {
   width: 140px;
   margin-right: 28px;
@@ -81,17 +85,13 @@ body {
   z-index: 1;
 }
 
-.navigation {
-  display: flex;
-}
-
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  min-width: 339px;
+  width: 339px;
 }
 
 .navigation-link {
@@ -112,8 +112,9 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-around;
-  margin: 0 0 0 auto;
-  min-width: 88px;
+  margin: 0;
+  margin-left: auto;
+  max-width: 268px;
   padding: 14px 0 14px 0;
 }
 
@@ -214,6 +215,7 @@ body {
   width: 651px;
   margin: 0;
 }
+
 /* Sedona Features List */
 
 .features-list {
@@ -401,21 +403,16 @@ body {
 
 /* Newsletter */
 
-.newsletter,
-.catalog-newsletter {
+.newsletter {
   height: 100%;
   padding: 96px 258px 104px 258px;
   margin: 0;
 }
 
-.newsletter {
+.newsletter-index {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   color: #ffffff;
-}
-
-.catalog-newsletter-title {
-  color: #000000;
 }
 
 .newsletter-title {
@@ -428,6 +425,14 @@ body {
 
 .newsletter-text {
   margin: 0 0 54px 0;
+}
+
+.newsletter-catalog {
+  background-color: #ffffff;
+}
+
+.newsletter-catalog-title {
+  color: #000000;
 }
 
 .newsletter-form {
