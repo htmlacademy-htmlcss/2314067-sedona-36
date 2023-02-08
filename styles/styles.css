@@ -624,7 +624,7 @@ body {
 
 .hotels-list {
   display: grid;
-  grid-template-rows: repeat(3, 340px);
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   list-style-type: none;
 }
