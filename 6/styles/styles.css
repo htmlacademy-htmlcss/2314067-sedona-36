@@ -57,7 +57,7 @@ body {
 
 .page-header {
   color: #000000;
-  max-height: 64px;
+  margin-bottom: -28px;
 }
 
 .visually-hidden {
@@ -102,7 +102,7 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
-  padding: 20px 32px 0 0;
+  padding: 20px 16px 20px 16px;
 }
 
 /* User Panel*/
@@ -112,9 +112,9 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-around;
-  padding-left: 285px;
-  margin: 0;
+  margin: 0 0 0 auto;
   min-width: 88px;
+  padding: 14px 0 14px 0;
 }
 
 .navigation-search-item,
@@ -174,26 +174,24 @@ body {
 
 .navigation-enter-item {
   width: 160px;
-  margin: 14px 0 14px 20px;
+  margin: 0 0 0 20px;
 }
 
 /* Main Block */
 
-.welcome-block-title {
-  display: block;
-  margin: 0 auto;
-  padding-top: 51px;
-  margin-bottom: 82px;
-}
-
 .welcome-block {
   width: 1200px;
-  min-height: 485px;
   margin: 0 auto;
   background-color: #82b3d3;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
+  padding: 51px 0 82px 0;
+}
+
+.welcome-block-title {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Sedona Features */
@@ -403,13 +401,21 @@ body {
 
 /* Newsletter */
 
+.newsletter,
+.catalog-newsletter {
+  height: 100%;
+  padding: 96px 258px 104px 258px;
+  margin: 0;
+}
+
 .newsletter {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   color: #ffffff;
-  height: 100%;
-  padding: 96px 258px 104px 258px;
-  margin: 0;
+}
+
+.catalog-newsletter-title {
+  color: #000000;
 }
 
 .newsletter-title {
@@ -443,7 +449,8 @@ body {
 /* Footer */
 
 .page-footer {
-  min-height: 120px;
+  display: flex;
+  padding: 40px 70px 30px 70px;
 }
 
 .footer-social {
@@ -484,13 +491,8 @@ body {
   text-decoration: none;
 }
 
-.page-footer a {
-  background-color: #ffffff;
-  color: #000000;
-  text-align: center;
-}
-
 .contacts-phone {
+  color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -670,7 +672,8 @@ body {
   margin-right: 8px;
 }
 
-.pagination-link {
+.pagination-link,
+.pagination-text {
   display: block;
   box-sizing: border-box;
   width: 60px;
@@ -684,17 +687,12 @@ body {
   text-decoration: none;
 }
 
+.pagination-text {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
-}
-
-/* Catalog Newsletter */
-
-.catalog-newsletter-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
