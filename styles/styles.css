@@ -667,6 +667,10 @@ body {
   box-sizing: border-box;
 }
 
+.hotels-card-image {
+  object-fit: fill;
+}
+
 .hotels-card-link {
   font-size: 24px;
   line-height: 28px;
