@@ -457,37 +457,30 @@ body {
   padding: 40px 70px 30px 70px;
 }
 
+/* Social */
+
 .footer-social {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0 41px 0 0;
+  list-style-type: none;
 }
 
 .social-vk,
 .social-telegram,
 .social-youtube {
+  position: relative;
   width: 47px;
-  height: 40px;
 }
 
-.social-vk {
-  background-image: url("../images/social/vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-telegram {
-  background-image: url("../images/social/telegram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-youtube {
-  background-image: url("../images/social/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .social-button {
@@ -495,20 +488,78 @@ body {
   text-decoration: none;
 }
 
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.social-icon:focus {
+  fill: #68a2ca;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* Contacts Phone */
+
 .contacts-phone {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  padding: 5px 194px 5px 195px;
 }
 
-.footer-logo {
-  margin-left: 234px;
+.contacts-phone:hover {
+  color: #756157;
+}
+
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.phone-link {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 720px;
+}
+
+/* Html Academy */
+
+.academy-link {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.academy-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding-left: 42px;
   max-width: 115px;
 }
 
-.page-footer .htmlacademy-link {
-  text-decoration: none;
+.academy-icon:hover {
+  fill: #756157;
+}
+
+.academy-icon:focus {
+  fill: #756157;
+}
+
+.academy-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Catalog */
