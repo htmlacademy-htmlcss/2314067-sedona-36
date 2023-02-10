@@ -73,6 +73,10 @@ body {
 
 /* Navigation Panel */
 
+.navigation {
+  display: flex;
+}
+
 .header-logo {
   width: 140px;
   margin-right: 28px;
@@ -81,17 +85,13 @@ body {
   z-index: 1;
 }
 
-.navigation {
-  display: flex;
-}
-
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  min-width: 339px;
+  width: 339px;
 }
 
 .navigation-link {
@@ -112,8 +112,9 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-around;
-  margin: 0 0 0 auto;
-  min-width: 88px;
+  margin: 0;
+  margin-left: auto;
+  max-width: 268px;
   padding: 14px 0 14px 0;
 }
 
@@ -214,6 +215,7 @@ body {
   width: 651px;
   margin: 0;
 }
+
 /* Sedona Features List */
 
 .features-list {
@@ -401,21 +403,16 @@ body {
 
 /* Newsletter */
 
-.newsletter,
-.catalog-newsletter {
+.newsletter {
   height: 100%;
   padding: 96px 258px 104px 258px;
   margin: 0;
 }
 
-.newsletter {
+.newsletter-index {
   background: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   color: #ffffff;
-}
-
-.catalog-newsletter-title {
-  color: #000000;
 }
 
 .newsletter-title {
@@ -427,6 +424,19 @@ body {
 }
 
 .newsletter-text {
+  margin: 0 0 54px 0;
+}
+
+.newsletter-catalog {
+  background-color: #ffffff;
+}
+
+.newsletter-catalog-title {
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.newsletter-catalog-text {
   margin: 0 0 54px 0;
 }
 
@@ -586,6 +596,8 @@ body {
 
 .sorting-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 50px 70px 0 70px;
 }
 
@@ -595,22 +607,69 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 200px 0 0;
   padding: 0;
 }
 
 .select-control {
+  font-family: inherit;
+  color: #333333;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  width: 292px;
+  padding: 14px 0 14px 20px;
+  margin-right: 70px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  cursor: pointer;
+  appearance: none;
 }
 
 .sorting-button {
-  width: 48px;
-  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 48px;
+  min-height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /* Hotels Cards */
+
+.hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-container {
+  width: 1060px;
+  padding: 0 70px 0 70px;
+  margin: 0 0 80px 0;
+}
+
+.hotels-card {
+  display: grid;
+  grid-template-rows: 212px repeat(4, auto);
+  grid-gap: 16px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.hotels-card-image {
+  object-fit: fill;
+}
 
 .hotels-card-link {
   font-size: 24px;
@@ -618,12 +677,35 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
-.hotels-card p {
+.cards-price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.hotels-card-title {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.hotels-card-text {
+  margin: 0;
+  text-align: right;
+}
+
+.cards-button {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-gap: 20px;
 }
 
 .item-button {
@@ -634,24 +716,30 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .item-button-more {
   background-color: #756157;
+  padding: 8px 26px;
 }
 
 .item-button-favorites {
   background-color: #82b3d3;
+  padding: 8px 20px;
 }
 
-.item-descr-rating-text,
-.item-rating {
+.item-rating-title,
+.item-rating-text {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  align-content: end;
 }
 
 /* Pagination */
