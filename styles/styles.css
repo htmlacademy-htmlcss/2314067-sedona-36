@@ -674,15 +674,33 @@ body {
   appearance: none;
 }
 
-.sorting-button {
+/* Show */
+
+.card-grid-toggle {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-width: 48px;
-  min-height: 48px;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.card-grid-toggle-current {
+  border-color: #000000;
+}
+
+.card-grid-toggle:hover {
+  border-color: #000000;
+}
+
+.card-grid-toggle:focus {
+  border-color: #68a2ca;
+}
+
+.card-grid-toggle:active {
+  border-color: #000000;
 }
 
 /* Hotels Cards */
@@ -792,11 +810,13 @@ body {
 .pagination-container {
   display: flex;
   padding: 0 70px 60px 70px;
+  margin: 0;
 }
 
 .pagination {
   display: flex;
   list-style-type: none;
+  width: 1060px;
   margin: 0;
   padding: 0;
 }
@@ -806,6 +826,7 @@ body {
 }
 
 .pagination-link,
+.pagination-current,
 .pagination-text {
   display: block;
   box-sizing: border-box;
@@ -818,6 +839,7 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .pagination-text {
@@ -828,4 +850,14 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
 }
