@@ -236,10 +236,22 @@ body {
 }
 
 .features-town-title {
+  position: relative;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0 28px 30px 28px;
+  margin: 0 28px 62px 28px;
+}
+
+.features-town-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 50%;
+  margin-left: -30px;
+  bottom: -30px;
 }
 
 .features-town-text {
@@ -263,11 +275,23 @@ body {
 }
 
 .features-item-title {
+  position: relative;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0 28px 30px 28px;
+  margin: 0 28px 62px 28px;
+}
+
+.features-item-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 50%;
+  margin-left: -30px;
+  bottom: -30px;
 }
 
 .features-item-text {
@@ -293,10 +317,22 @@ body {
 }
 
 .features-mountains-title {
+  position: relative;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0 28px 30px 28px;
+  margin: 0 28px 62px 28px;
+}
+
+.features-mountains-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 50%;
+  margin-left: -30px;
+  bottom: -30px;
 }
 
 .features-mountains-text {
@@ -395,6 +431,24 @@ body {
   padding: 8px 50px 8px 50px;
 }
 
+.find-hotels:hover,
+.find-hotels:focus {
+  background-color: #615048;
+  border-color: #615048;
+}
+
+.find-hotels:active {
+  background-color: #756157;
+  border-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* .find-hotels:disabled:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  cursor: none;
+} */
+
 /* Newsletter */
 
 .newsletter {
@@ -448,6 +502,21 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  border-radius: 0 4px 4px 0;
+  width: 232px;
+  padding: 8px 50px;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #68a2ca;
+  border-color: #68a2ca;
+}
+
+.newsletter-button:active {
+  background-color: #82b3d3;
+  border-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Footer */
@@ -855,6 +924,7 @@ body {
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: #68a2ca;
+  border-color: #82b3d3;
 }
 
 .pagination-link:active {
