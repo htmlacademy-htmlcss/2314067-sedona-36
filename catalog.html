@@ -22,7 +22,7 @@
               <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -38,6 +38,7 @@
               </a>
             </li>
             <li class="navigation-enter-item">
+              <!-- Класс disabled -->
               <a class="button navigation-enter" type="submit" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -48,8 +49,10 @@
         <section class="filter-block">
           <h2 class="hotels-main-title">Гостиницы Седоны</h2>
           <ol class="breadcrumbs">
-            <li class="breadcrumbs-item-icon">
-              <a class="breadcrumbs-link-icon" href="index.html">Главная</a>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-link-icon" href="index.html">
+                <span class="visually-hidden">Главная</span>
+              </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -208,6 +211,7 @@
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail" id="newsletter-email"
               required>
+              <!-- Класс disabled -->
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
