@@ -77,8 +77,8 @@
               <input type="radio" name="apartments" value="apartments" id="apartments" class="visually-hidden">
               <label for="apartments" class="filter-label">Апартаменты</label>
             </fieldset>
-            <button type="submit" class="form-submit">Применить</button>
-            <button type="reset" class="form-reset">Сбросить</button>
+            <button type="submit" class="button form-submit">Применить</button>
+            <button type="reset" class="button form-reset">Сбросить</button>
           </form>
         </section>
         <section class="main-block">
@@ -124,9 +124,11 @@
                   <a class="item-button item-button-favorites" href="#">в избранное</a>
                 </div>
                 <div class="hotels-stars">
-                  <span class="visually-hidden">4 звезды</span>
+                  <p class="hotels-rating-title hotels-rating-4">
+                    <span class="visually-hidden">4 звезды</span>
+                  </p>
+                  <p class="hotels-rating-text">Рейтинг: 8,5</p>
                 </div>
-                <p class="item-rating-title">Рейтинг: <span class="item-rating-text">8,5</span></p>
               </li>
               <li class="hotels-card">
                 <img class="hotels-card-image" src="images/hotels/hotel-two.jpg" alt="Villas at Poco Diablo" width="300"
@@ -141,9 +143,11 @@
                   <a class="item-button item-button-favorites-current" href="#">в избранное</a>
                 </div>
                 <div class="hotels-stars">
-                  <span class="visually-hidden">4 звезды</span>
+                  <p class="hotels-rating-title hotels-rating-4">
+                    <span class="visually-hidden">4 звезды</span>
+                  </p>
+                  <p class="hotels-rating-text">Рейтинг: 9,2</p>
                 </div>
-                <p class="item-rating-title">Рейтинг: <span class="item-rating-text">9,2</span></p>
               </li>
               <li class="hotels-card">
                 <img class="hotels-card-image" src="images/hotels/hotel-three.jpg" alt="Desert Quail Inn" width="300"
@@ -158,9 +162,11 @@
                   <a class="item-button item-button-favorites" href="#">в избранное</a>
                 </div>
                 <div class="hotels-stars">
-                  <span class="visually-hidden">3 звезды</span>
+                  <p class="hotels-rating-title hotels-rating-3">
+                    <span class="visually-hidden">3 звезды</span>
+                  </p>
+                  <p class="hotels-rating-text">Рейтинг: 6,9</p>
                 </div>
-                <p class="item-rating-title">Рейтинг: <span class="item-rating-text">6,9</span></p>
               </li>
               <li class="hotels-card">
                 <img class="hotels-card-image" src="images/hotels/hotel-four.jpg" alt="GreenTree Inn" width="300"
@@ -175,9 +181,11 @@
                   <a class="item-button item-button-favorites" href="#">в избранное</a>
                 </div>
                 <div class="hotels-stars">
-                  <span class="visually-hidden">2 звезды</span>
+                  <p class="hotels-rating-title hotels-rating-2">
+                    <span class="visually-hidden">2 звезды</span>
+                  </p>
+                  <p class="hotels-rating-text">Рейтинг: 5,0</p>
                 </div>
-                <p class="item-rating-title">Рейтинг: <span class="item-rating-text">5,0</span></p>
               </li>
             </ul>
           </div>
@@ -211,7 +219,7 @@
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail" id="newsletter-email"
               required>
-              <!-- Класс disabled -->
+            <!-- Класс disabled -->
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
