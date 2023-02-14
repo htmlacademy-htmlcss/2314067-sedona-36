@@ -129,7 +129,6 @@ body {
   margin: 0;
   margin-left: auto;
   max-width: 268px;
-  /* padding: 14px 0 14px 0; */
 }
 
 .navigation-search-link {
@@ -142,7 +141,7 @@ body {
 }
 
 .navigation-like-link {
-  background-image: url("../images/navigation/search.svg");
+  background-image: url("../images/navigation/heartlike.svg");
   background-repeat: no-repeat;
   min-width: 18px;
   min-height: 64px;
