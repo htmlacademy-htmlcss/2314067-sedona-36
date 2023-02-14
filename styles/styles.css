@@ -173,7 +173,6 @@ body {
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
-  border-radius: 4px;
   width: 92px;
   padding: 8px 34px 8px 34px;
 }
@@ -402,26 +401,25 @@ body {
   min-height: 223px;
   padding: 81px 85px 81px 85px;
   margin: 0;
-
 }
 
 .house-item {
   background-image: url("../images/amenities/home.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 81px;
 }
 
 .food-item {
   background-image: url("../images/amenities/food.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 82px;
   background-color: #ffffff;
 }
 
 .souvenir-item {
   background-image: url("../images/amenities/souvenirs.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 79px;
 }
 
 .amenities-item-title {
@@ -430,6 +428,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 0 30px 0;
+  padding-top: 102px;
 }
 
 .amenities-item-text {
@@ -555,6 +554,7 @@ body {
 .page-footer {
   display: flex;
   padding: 40px 70px 30px 70px;
+  justify-content: space-between;
 }
 
 /* Social */
@@ -563,8 +563,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 41px 0 0;
+  padding: 5px 0 5px 0;
   list-style-type: none;
+  width: 142px;
+  min-height: 40px;
 }
 
 .social-vk,
@@ -572,6 +574,7 @@ body {
 .social-youtube {
   position: relative;
   width: 47px;
+  height: 40px;
 }
 
 .social-icon {
@@ -603,11 +606,14 @@ body {
 /* Contacts Phone */
 
 .contacts-phone {
+  display: flex;
+  flex-wrap: wrap;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  padding: 5px 194px 5px 195px;
+  padding: 5px 0 5px 0;
+  text-align: center;
 }
 
 .contacts-phone:hover {
@@ -622,32 +628,21 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.phone-link {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 720px;
-}
-
 /* Html Academy */
 
 .academy-link {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   margin: 0;
-  padding: 0;
+  padding: 9px 0 9px 0;
   list-style-type: none;
 }
 
 .academy-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
-  padding-left: 42px;
-  max-width: 115px;
+  margin-left: 42px;
+  width: 115px;
+  height: 33px;
 }
 
 .academy-icon:hover {
