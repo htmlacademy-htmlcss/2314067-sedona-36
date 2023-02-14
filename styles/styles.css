@@ -129,26 +129,26 @@ body {
   margin: 0;
   margin-left: auto;
   max-width: 268px;
-  padding: 14px 0 14px 0;
+  /* padding: 14px 0 14px 0; */
 }
 
 .navigation-search-link {
   background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
   min-width: 20px;
-  min-height: 20px;
+  min-height: 64px;
   background-position: center;
-  margin: 8px 0 8px 0;
+  margin: 0;
 }
 
 .navigation-like-link {
   background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
   min-width: 18px;
-  min-height: 17px;
+  min-height: 64px;
   background-position: center;
   position: relative;
-  margin: 10px 0 9px 0;
+  margin: 0;
 }
 
 .like-count {
@@ -160,7 +160,7 @@ body {
   border-radius: 10px;
   color: #ffffff;
   padding: 5px 5px 5px 4px;
-  margin-top: -11px;
+  margin-top: 11px;
 }
 
 .navigation-search-link,
