@@ -142,7 +142,7 @@ body {
 }
 
 .navigation-like-link {
-  background-image: url("../images/navigation/heart.svg");
+  background-image: url("../images/navigation/heartlike.svg");
   background-repeat: no-repeat;
   min-width: 18px;
   min-height: 64px;
