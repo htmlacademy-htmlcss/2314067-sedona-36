@@ -842,13 +842,20 @@ body {
   min-width: 160px;
 }
 
-.card-grid-toggle {
+.card-grid-toggle-select {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.card-grid-toggle-current {
+  background-image: url("../images/show/cards.svg");
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
@@ -861,15 +868,15 @@ body {
   border-color: #000000;
 }
 
-.card-grid-toggle:hover {
+.card-grid-toggle-select:hover {
   border-color: #000000;
 }
 
-.card-grid-toggle:focus {
+.card-grid-toggle-select:focus {
   border-color: #68a2ca;
 }
 
-.card-grid-toggle:active {
+.card-grid-toggle-select:active {
   border-color: #000000;
 }
 
