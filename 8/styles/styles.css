@@ -129,26 +129,25 @@ body {
   margin: 0;
   margin-left: auto;
   max-width: 268px;
-  padding: 14px 0 14px 0;
 }
 
 .navigation-search-link {
   background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
   min-width: 20px;
-  min-height: 20px;
+  min-height: 64px;
   background-position: center;
-  margin: 8px 0 8px 0;
+  margin: 0;
 }
 
 .navigation-like-link {
   background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
   min-width: 18px;
-  min-height: 17px;
+  min-height: 64px;
   background-position: center;
   position: relative;
-  margin: 10px 0 9px 0;
+  margin: 0;
 }
 
 .like-count {
@@ -160,7 +159,7 @@ body {
   border-radius: 10px;
   color: #ffffff;
   padding: 5px 5px 5px 4px;
-  margin-top: -11px;
+  margin-top: 11px;
 }
 
 .navigation-search-link,
@@ -173,7 +172,6 @@ body {
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
-  border-radius: 4px;
   width: 92px;
   padding: 8px 34px 8px 34px;
 }
@@ -402,26 +400,25 @@ body {
   min-height: 223px;
   padding: 81px 85px 81px 85px;
   margin: 0;
-
 }
 
 .house-item {
   background-image: url("../images/amenities/home.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 81px;
 }
 
 .food-item {
   background-image: url("../images/amenities/food.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 82px;
   background-color: #ffffff;
 }
 
 .souvenir-item {
   background-image: url("../images/amenities/souvenirs.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 79px;
 }
 
 .amenities-item-title {
@@ -430,6 +427,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 0 30px 0;
+  padding-top: 102px;
 }
 
 .amenities-item-text {
@@ -555,6 +553,7 @@ body {
 .page-footer {
   display: flex;
   padding: 40px 70px 30px 70px;
+  justify-content: space-between;
 }
 
 /* Social */
@@ -563,8 +562,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 41px 0 0;
+  padding: 5px 0 5px 0;
   list-style-type: none;
+  width: 142px;
+  min-height: 40px;
 }
 
 .social-vk,
@@ -572,6 +573,7 @@ body {
 .social-youtube {
   position: relative;
   width: 47px;
+  height: 40px;
 }
 
 .social-icon {
@@ -603,11 +605,14 @@ body {
 /* Contacts Phone */
 
 .contacts-phone {
+  display: flex;
+  flex-wrap: wrap;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  padding: 5px 194px 5px 195px;
+  padding: 5px 0 5px 0;
+  text-align: center;
 }
 
 .contacts-phone:hover {
@@ -622,32 +627,21 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.phone-link {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 720px;
-}
-
 /* Html Academy */
 
 .academy-link {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   margin: 0;
-  padding: 0;
+  padding: 9px 0 9px 0;
   list-style-type: none;
 }
 
 .academy-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
-  padding-left: 42px;
-  max-width: 115px;
+  margin-left: 42px;
+  width: 115px;
+  height: 33px;
 }
 
 .academy-icon:hover {
@@ -817,8 +811,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 200px 0 0;
-  padding: 0;
+  padding-right: 200px;
+  margin: 0;
 }
 
 .select-control {
@@ -841,15 +835,26 @@ body {
 
 /* Show */
 
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  min-width: 160px;
+}
+
 .card-grid-toggle {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  align-items: center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+
+.card-grid-toggle:not(:last-child) {
+  margin-right: 7px;
 }
 
 .card-grid-toggle-current {
@@ -1032,13 +1037,28 @@ body {
 }
 
 .hotels-rating-title {
-  margin: 0;
-  padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .hotels-rating-4 {
-  width: 140px;
-  background: url("../images/star.svg") 6px center / 18px 17px repeat-x;
+  width: 80px;
+  background: url("../images/star.svg");
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.hotels-rating-3 {
+  width: 60px;
+  background: url("../images/star.svg");
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.hotels-rating-2 {
+  width: 40px;
+  background: url("../images/star.svg");
+  background-repeat: space;
+  background-size: 18px 17px;
 }
 
 /* Pagination */
