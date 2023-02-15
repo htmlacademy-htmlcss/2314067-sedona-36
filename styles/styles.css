@@ -516,18 +516,29 @@ body {
   margin: 0 0 54px 0;
 }
 
+/* Newsletter Form & Button */
+
+.field {
+  margin: 0;
+  padding: 14px 20px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  border-color: transparent;
+  width: 452px;
+}
+
 .newsletter-form {
   display: flex;
   justify-content: center;
 }
 
-.newsletter-email {
-  font: inherit;
-}
-
 .newsletter-button {
-  background-color: #82B3D3;
-  border-color: #82B3D3;
+  background-color: #82b3d3;
+  border-color: transparent;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
