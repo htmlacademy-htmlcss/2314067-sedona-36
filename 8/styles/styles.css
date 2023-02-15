@@ -738,12 +738,15 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Filter */
+/* Catalog Filter Group */
 
-.filter-form {
-  width: 371px;
-  margin-right: 140px;
+.filter-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
+
+
 
 .hotels-filter-title {
   font-size: 20px;
@@ -756,6 +759,83 @@ body {
   line-height: 23px;
   font-weight: 400;
 }
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 36px;
+  margin: 0;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  border: 3px solid #83b3d3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83b3d3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-lable {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 143px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: left;
+  background-color: #f2f2f2;
+
+
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Filter Button */
 
 .form-submit,
 .form-reset {
