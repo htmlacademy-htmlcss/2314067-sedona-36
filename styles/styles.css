@@ -773,6 +773,7 @@ body {
   line-height: 23px;
   font-weight: 400;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 /* Checkbox & Radio */
@@ -780,6 +781,7 @@ body {
 .control {
   position: relative;
   display: block;
+  padding-left: 32px;
 }
 
 .control-mark {
@@ -800,6 +802,10 @@ body {
   height: 20px;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.control:hover {
+  opacity: 0,5;
 }
 
 /* Catalog Filter Price */
