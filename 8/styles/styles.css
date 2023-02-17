@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  width: 1280px;
+  min-width: 1280px;
   margin: 0 auto;
   height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -576,29 +576,15 @@ body {
   padding: 5px 0 5px 0;
   list-style-type: none;
   width: 142px;
-  min-height: 40px;
-}
-
-.social-vk,
-.social-telegram,
-.social-youtube {
-  position: relative;
-  width: 47px;
-  height: 40px;
-}
-
-.social-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
 }
 
 .social-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  width: 47px;
+  height: 40px;
 }
 
 .social-icon:hover {
@@ -616,8 +602,7 @@ body {
 /* Contacts Phone */
 
 .contacts-phone {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
@@ -995,7 +980,7 @@ body {
   min-width: 160px;
 }
 
-.card-grid-toggle-select {
+.card-grid-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1006,11 +991,10 @@ body {
   height: 48px;
 }
 
-.card-grid-toggle-current {
+.card-grid-toggle-cards {
   background-image: url("../images/show/cards.svg");
   background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
+  background-position: center;
 }
 
 .card-grid-toggle:not(:last-child) {
@@ -1021,15 +1005,18 @@ body {
   border-color: #000000;
 }
 
-.card-grid-toggle-select:hover {
+.card-grid-toggle-slide:hover,
+.card-grid-toggle-list:hover {
   border-color: #000000;
 }
 
-.card-grid-toggle-select:focus {
+.card-grid-toggle-slide:focus,
+.card-grid-toggle-list:focus {
   border-color: #68a2ca;
 }
 
-.card-grid-toggle-select:active {
+.card-grid-toggle-slide:active,
+.card-grid-toggle-list:active {
   border-color: #000000;
 }
 
@@ -1056,7 +1043,6 @@ body {
 }
 
 .hotels-container {
-  width: 1060px;
   padding: 0 70px 0 70px;
   margin: 40px 0 80px 0;
 }
