@@ -680,6 +680,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   color: #ffffff;
   list-style-type: none;
 }
@@ -728,7 +729,6 @@ body {
 .filter-form{
   display: flex;
   justify-content: center;
-  padding-top: 40px;
 }
 
 .hotels-filter-group {
@@ -742,23 +742,64 @@ body {
 }
 
 .group-typehouse {
-
+  margin-right: 140px;
 }
 
-.hotels-filter-title,
-.catalog-filter-title {
+.hotels-filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   padding-bottom: 32px;
-  padding-left: 0;
-  text-align: left;
 }
 
-.hotels-filter-text {
+.hotels-filter-title.price {
+  padding-left: 0;
+}
+
+.hotels-filter-list {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-filter-type{
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-filter-item {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  margin-bottom: 16px;
+}
+
+/* Checkbox & Radio */
+
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 /* Catalog Filter Price */
@@ -769,7 +810,7 @@ body {
   align-items: flex-start;
   width: 288px;
   border: 0;
-  padding: 0 70px 0 140px;
+  padding: 0;
   margin: 0;
 }
 
