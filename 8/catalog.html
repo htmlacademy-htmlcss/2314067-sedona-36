@@ -64,38 +64,58 @@
               <legend class="hotels-filter-title">Инфраструктура:</legend>
               <ul class="hotels-filter-list">
                 <li class="hotels-filter-item">
-                  <input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
-                  <label for="pool" class="hotels-filter-text">Бассейн</label>
+                  <label for="pool" class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-lable">Бассейн</span>
+                  </label>
                 </li>
                 <li class="hotels-filter-item">
-                  <input type="checkbox" name="parking" id="parking" class="visually-hidden" checked>
-                  <label for="parking" class="hotels-filter-text">Парковка</label>
+                  <label for="parking" class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-lable">Парковка</span>
+                  </label>
                 </li>
                 <li class="hotels-filter-item">
-                  <input type="checkbox" name="wifi" id="wifi" class="visually-hidden">
-                  <label for="wifi" class="hotels-filter-text">Wi-fi</label>
+                  <label for="wifi" class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="wifi" id="wifi">
+                    <span class="control-mark"></span>
+                    <span class="control-lable">Wi-fi</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="hotels-filter-group group-typehouse">
               <legend class="hotels-filter-title">Тип Жилья:</legend>
-              <ul class="hotels-filter-list">
+              <ul class="hotels-filter-type">
                 <li class="hotels-filter-item">
-                  <input type="radio" name="hotel" value="hotel" id="hotel" class="visually-hidden" checked>
-                  <label for="hotel" class="hotels-filter-text">Гостиница</label>
+                  <label for="hotel" class="control">
+                    <input class="visually-hidden control-input" type="radio" name="hotel" value="hotel" id="hotel"
+                      checked>
+                    <span class="control-mark-radio"></span>
+                    <span class="control-lable">Гостиница</span>
+                  </label>
                 </li>
                 <li class="hotels-filter-item">
-                  <input type="radio" name="motel" value="motel" id="motel" class="visually-hidden">
-                  <label for="motel" class="hotels-filter-text">Мотель</label>
+                  <label for="motel" class="control">
+                    <input class="visually-hidden control-input" type="radio" name="motel" value="motel" id="motel">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-lable">Мотель</span>
+                  </label>
                 </li>
                 <li class="hotels-filter-item">
-                  <input type="radio" name="apartments" value="apartments" id="apartments" class="visually-hidden">
-                  <label for="apartments" class="hotels-filter-text">Апартаменты</label>
+                  <label for="apartments" class="control">
+                    <input class="visually-hidden control-input" type="radio" name="apartments" value="apartments"
+                      id="apartments">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-lable">Апартаменты</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <legend class="hotels-filter-title price">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
                 <input class="range-input range-input-min" type="number" value="0" name="min-price">
                 <label class="catalog-filter-lable-min">от</label>
@@ -125,8 +145,11 @@
           <div class="sorting-container">
             <h2 class="visually-hidden">Результаты поиска</h2>
             <p class="sorting-container-text">Найдено гостиниц: <span id="hotelNumber">38</span></p>
+            <!-- Класс disabled -->
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
             </select>
             <div class="card-grid">
               <a href="#" class="card-grid-toggle card-grid-toggle-cards card-grid-toggle-current">
