@@ -1428,13 +1428,13 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  /* text-align: left; */
+  text-align: left;
 }
 
 .field-group {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 440px;
   margin-bottom: 23px;
 }
 
@@ -1470,5 +1470,79 @@ body {
   width: 16px;
   height: 15px;
   background-image: url("../images/modal/calendar.svg");
+}
 
+.error-message,
+.message {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  padding-left: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.error-message {
+  color: #ff5757;
+}
+
+.date-input {
+  font: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.visitor-counts {
+  display: grid;
+  grid-template-columns: 137px 110px 88px 131px 111px;
+  align-items: center;
+}
+
+.adults-count,
+.kids-count {
+  font: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.kids-count {
+  grid-column: 4/5;
+}
+
+.kdis-count-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+.adult-count-wrapper,
+.kids-count-wrapper {
+  display: grid;
+  grid-template-columns: 40px 31px 40px;
+  margin-left: auto;
+}
+
+.plus,
+.minus {
+  box-sizing: border-box;
+  border: 4px solid transparent;
+  text-align: center;
+}
+
+.plus {
+  background-image: url("../images/modal/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.minus {
+  background-image: url("../images/modal/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px 0 0 4px;
 }
