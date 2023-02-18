@@ -168,9 +168,7 @@
         </a>
       </footer>
     </div>
-
     <div class="modal-container modal-container-close">
-
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -184,10 +182,46 @@
               <span class="calendar"></span>
               <span class="error-message">Мы не можем отправить вас в прошлое.</span>
             </p>
+            <p class="field-group">
+              <label class="date-input" for="checkout-date">Дата выезда:</label>
+              <input class="check-out-date date" type="text" id="checkout-date" name="check-out"
+                value="1 сентября 2023">
+              <span class="calendar"></span>
+              <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="visitor-counts">
+              <label class="adults-count" for="adults-count-input">Взрослые:</label>
+              <span class="adult-count-wrapper">
+                <button class="field-button minus" type="button"></button>
+                <input class="adults-count-input modal-input" type="number" value="2" id="adults-count-input"
+                  name="adults count" required>
+                <button class="field-button plus" type="button"></button>
+              </span>
+              <span class="kids-count kids-count-icon">
+                <label class="kids-count" for="kids-count-input">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                      viewBox="0 0 26 26">
+                      <circle cx="13" cy="13" r="13" fill="#83b3d3"/>
+                      <path fill="#ffffff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <span class="kids-count-wrapper">
+                <button class="field-button minus" type="button"></button>
+                <input class="kids-count-input modal-input" type="number" value="2" id="kids-count-input"
+                  name="kids count" required>
+                <button class="field-button plus" type="button"></button>
+              </span>
+            </div>
+            <button class="button modal-search-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
-
     </div>
   </body>
 

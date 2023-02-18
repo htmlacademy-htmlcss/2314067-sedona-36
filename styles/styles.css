@@ -1433,6 +1433,42 @@ body {
 
 .field-group {
   position: relative;
-
+  display: flex;
+  flex-direction: column;
   margin-bottom: 23px;
+}
+
+.date {
+  padding: 12px 20px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: 3px solid transparent;
+}
+
+.date:hover {
+  background-color: #e6e6e6;
+}
+
+.date:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.date:active {
+  border: 2px solid #000000;
+}
+
+.calendar {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/modal/calendar.svg");
+
 }
