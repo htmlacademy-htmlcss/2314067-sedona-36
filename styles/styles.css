@@ -756,16 +756,12 @@ body {
   padding-left: 0;
 }
 
-.hotels-filter-list {
+.hotels-filter-list,
+.hotels-filter-type {
   width: 150px;
   margin: 0;
   padding: 0;
-}
-
-.hotels-filter-type{
-  width: 150px;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
 }
 
 .hotels-filter-item {
@@ -804,8 +800,40 @@ body {
   background-color: #ffffff;
 }
 
-.control:hover {
-  opacity: 0,5;
+/* .control:hover {
+
+} */
+
+.control-input:focus + .control-mark,
+.control-input:focus + .control-mark-radio {
+  outline: solid 3px #83b3d3;
+}
+
+/* .control:active {
+
+} */
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url("../images/control-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3f5e72;
+  content: "";
 }
 
 /* Catalog Filter Price */
@@ -1016,6 +1044,20 @@ body {
   background-position: right 20px center;
   cursor: pointer;
   appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 /* Show */
