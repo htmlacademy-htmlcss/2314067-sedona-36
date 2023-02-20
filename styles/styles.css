@@ -58,8 +58,10 @@ body {
 }
 
 .page-header {
+  position: relative;
   color: #000000;
-  margin-bottom: -6px;
+  margin-bottom: -12px;
+  z-index: 1;
 }
 
 .visually-hidden {
@@ -84,9 +86,7 @@ body {
 .header-logo {
   width: 140px;
   margin-right: 28px;
-  margin-bottom: -6px;
   align-items: center;
-  z-index: 1;
 }
 
 .navigation-list {
@@ -127,6 +127,7 @@ body {
   list-style-type: none;
   align-items: center;
   margin: 0;
+  padding: 0;
   margin-left: auto;
   max-width: 268px;
 }
@@ -635,7 +636,6 @@ body {
 
 .academy-icon {
   margin: auto;
-  margin-left: 42px;
   width: 115px;
   height: 33px;
 }
@@ -683,21 +683,23 @@ body {
   margin-bottom: 40px;
   color: #ffffff;
   list-style-type: none;
+  align-items: center;
 }
 
 .breadcrumbs-item {
   position: relative;
-  display: block;
+  display: flex;
   font-size: 16px;
   line-height: 21px;
+  padding-right: 16px;
+  margin-right: 12px;
 }
 
-.breadcrumbs-item:not(:last-child) {
+.breadcrumbs-link-icon {
   width: 12px;
   height: 12px;
-  background-image: url("../images/breadcrumbs/breadcrumbs_home.svg");
+  background-image: url("../images/breadcrumbs/breadcrumbs-home.svg");
   background-repeat: no-repeat;
-  margin: 4px 29px 4px 0;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -705,7 +707,7 @@ body {
   display: block;
   position: absolute;
   top: 1px;
-  right: -20px;
+  right: 0;
   width: 7px;
   height: 10px;
   background-image: url("../images/breadcrumbs/arrow-right.svg");
@@ -1376,6 +1378,10 @@ body {
 
 /* Modal Container */
 
+/* .modal-container-close {
+  display: none;
+} */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1385,10 +1391,6 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
-/* .modal-container-close {
-  display: none;
-} */
 
 .modal {
   position: relative;
