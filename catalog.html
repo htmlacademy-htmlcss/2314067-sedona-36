@@ -115,11 +115,15 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="hotels-filter-title price">Стоимость, ₽:</legend>
-              <div class="range-wrapper-inputs">
-                <input class="range-input range-input-min" type="number" value="0" name="min-price">
-                <label class="catalog-filter-lable-min">от</label>
-                <input class="range-input range-input-max" type="number" value="9000" name="max-price">
-                <label class="catalog-filter-lable-max">до</label>
+              <div class="range-wrapper-input">
+                <div class="range-input-price">
+                  <input class="range-input range-input-min" type="number" value="0" name="min-price" id="min-price">
+                  <label class="catalog-filter-lable-min" for="min-price">от</label>
+                </div>
+                <div class="range-input-price">
+                  <input class="range-input range-input-max" type="number" value="9000" name="max-price" id="max-price">
+                  <label class="catalog-filter-lable-max" for="max-price">до</label>
+                </div>
               </div>
               <div class="range">
                 <div class="range-scale">

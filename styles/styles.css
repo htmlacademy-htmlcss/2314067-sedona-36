@@ -751,7 +751,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .hotels-filter-title.price {
@@ -850,12 +850,16 @@ body {
   margin: 0;
 }
 
-.range-wrapper-inputs {
+.range-wrapper-input {
   display: flex;
   justify-content: center;
   position: relative;
   margin-bottom: 36px;
 }
+
+/* .range-input-price {
+
+} */
 
 .catalog-filter-lable-min {
   align-items: center;
@@ -864,6 +868,7 @@ body {
   left: 106px;
   top: 12px;
   color: rgba(0, 0, 0, 0.3);
+  /* padding-right: 20px; */
 }
 
 .catalog-filter-lable-max {
@@ -875,8 +880,7 @@ body {
 
 .range-input {
   width: 143px;
-  margin: 0;
-  padding: 12px 0 12px 20px;
+  height: 48px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -905,6 +909,7 @@ body {
 
 .range-input:hover {
   background-color: #e6e6e6;
+  border-color: transparent;
 }
 
 .range-input:focus {
