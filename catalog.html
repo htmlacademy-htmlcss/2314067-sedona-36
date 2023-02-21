@@ -46,7 +46,7 @@
       </header>
       <main class="hotels-main main-container">
         <h1 class="visually-hidden">Фильтр гостиниц</h1>
-        <section class="filter-block">
+        <section class="filter-block filter-index">
           <h2 class="hotels-main-title">Гостиницы Седоны</h2>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -80,7 +80,7 @@
                   <label for="wifi" class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="wifi" id="wifi">
                     <span class="control-mark"></span>
-                    <span class="control-lable">Wi-fi</span>
+                    <span class="control-lable">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -117,10 +117,15 @@
               <legend class="hotels-filter-title price">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-input">
-                  <input class="range-input range-input-min" type="number" value="0" name="min-price" id="min-price">
-                  <label class="catalog-filter-lable-min" for="min-price">от</label>
-                  <input class="range-input range-input-max" type="number" value="9000" name="max-price" id="max-price">
-                  <label class="catalog-filter-lable-max" for="max-price">до</label>
+                  <div class="range-wrapper-input-min">
+                    <input class="range-input range-input-min" type="number" value="0" name="min-price" id="min-price">
+                    <label class="catalog-filter-lable-min" for="min-price">от</label>
+                  </div>
+                  <div class="range-wrapper-input-max">
+                    <input class="range-input range-input-max" type="number" value="9000" name="max-price"
+                      id="max-price">
+                    <label class="catalog-filter-lable-max" for="max-price">до</label>
+                  </div>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="width: 187px;">

@@ -130,13 +130,14 @@ body {
   padding: 0;
   margin-left: auto;
   max-width: 268px;
+  max-height: 64px;
 }
 
 .navigation-search-link {
   background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
   min-width: 20px;
-  min-height: 64px;
+  min-height: 44px;
   background-position: center;
   margin: 0;
 }
@@ -145,7 +146,7 @@ body {
   background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
   min-width: 18px;
-  min-height: 64px;
+  min-height: 44px;
   background-position: center;
   position: relative;
   margin: 0;
@@ -160,7 +161,7 @@ body {
   border-radius: 10px;
   color: #ffffff;
   padding: 5px 5px 5px 4px;
-  margin-top: 11px;
+  margin-top: 0;
 }
 
 .navigation-search-link,
@@ -655,13 +656,17 @@ body {
 /* Catalog */
 
 .filter-block {
-  background: url("../images/catalog-background.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 35px 70px 70px 70px;
+  margin: 0;
+}
+
+.filter-index {
+  background: url("../images/catalog-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
 }
 
 .hotels-main-title {
@@ -743,16 +748,13 @@ body {
   margin-right: 70px;
 }
 
-.group-typehouse {
-  margin-right: 140px;
-}
-
 .hotels-filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
   text-align: left;
+  padding: 0;
 }
 
 .hotels-filter-list,
@@ -776,7 +778,7 @@ body {
 .control {
   position: relative;
   display: block;
-  padding-left: 32px;
+  padding-left: 36px;
 }
 
 .control-mark {
@@ -799,18 +801,18 @@ body {
   background-color: #ffffff;
 }
 
-/* .control:hover {
-
-} */
+.control:hover {
+  opacity: 0.6;
+}
 
 .control-input:focus + .control-mark,
 .control-input:focus + .control-mark-radio {
   outline: solid 3px #83b3d3;
 }
 
-/* .control:active {
-
-} */
+.control:active {
+  opacity: 0.3;
+}
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
@@ -843,8 +845,8 @@ body {
   align-items: flex-start;
   width: 288px;
   border: 0;
-  padding: 0 70px 0 0;
-  margin: 0;
+  margin: 0 70px 0 140px;
+  padding: 0;
 }
 
 .range {
@@ -854,29 +856,41 @@ body {
 }
 
 .range-wrapper-input {
-  position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 36px;
+}
+
+.range-wrapper-input-min,
+.range-wrapper-input-max {
+  position: relative;
+  /* display: flex; */
+}
+
+.catalog-filter-lable-min,
+.catalog-filter-lable-max {
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-lable-min {
   position: absolute;
   left: 106px;
   top: 12px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-lable-max {
   position: absolute;
   right: 20px;
   top: 12px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .range-input {
   width: 143px;
-  min-height: 48px;
+  height: 48px;
   margin: 0;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -924,7 +938,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin: 0;
+  margin-left: 10px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -980,6 +994,7 @@ body {
 
 .form-submit,
 .form-reset {
+  display: inline-block;
   font: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -987,13 +1002,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 .form-submit {
   background-color: #82b3d3;
-  border: 4px solid #82b3d3;
-  padding: 8px 50px 8px 50px;
+  border-color: #82b3d3;
   margin-bottom: 32px;
+  padding: 8px 50px;
 }
 
 .form-submit:hover,
@@ -1009,10 +1025,9 @@ body {
 }
 
 .form-reset {
-  display: inline-block;
+  padding: 8px 58px;
   background: transparent;
-  border: 4px solid transparent;
-  padding: 8px 58px 8px 58px;
+  border-color: transparent;
 }
 
 .form-reset:hover {
@@ -1020,13 +1035,15 @@ body {
 }
 
 .form-reset:focus {
-  color: #ffffff;
-  border-color: #82b3d3;
+  border: 3px solid #82b3d3;
 }
 
 .form-reset:active {
   color: rgba(255, 255, 255, 0.3);
-  border: 0;
+}
+
+.form-reset:disabled {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Sorting Container */
@@ -1035,7 +1052,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 70px 0 70px;
+  padding: 50px 70px 0 70px;
+  margin: 0;
 }
 
 .sorting-container-text {
@@ -1197,6 +1215,9 @@ body {
 }
 
 .hotels-card-text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   margin: 0;
   text-align: right;
 }
