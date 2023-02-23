@@ -1598,10 +1598,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.minus-icon{
-
-}
-
 .minus-icon:hover,
 .plus-icon:hover {
   fill: #000000;
