@@ -1272,19 +1272,16 @@ body {
 
 .item-button-favorites:active {
   background-color: #82b3d3;
-  /* border-color: #82b3d3; */
   color: rgba(255, 255, 255, 0.3);
 }
 
 .item-button-favorites-current:hover,
 .item-button-favorites-current:focus {
   background-color: #6c9e42;
-  /* border-color: #6c9e42; */
 }
 
 .item-button-favorites-current:active {
   background-color: #7db54f;
-  /* border-color: #7db54f; */
   color: rgba(255, 255, 255, 0.3);
 }
 
