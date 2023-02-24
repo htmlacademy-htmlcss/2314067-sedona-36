@@ -552,12 +552,10 @@ body {
 .newsletter-button:hover,
 .newsletter-button:focus {
   background-color: #68a2ca;
-  border-color: #68a2ca;
 }
 
 .newsletter-button:active {
   background-color: #82b3d3;
-  border-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -873,6 +871,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 
 .catalog-filter-lable-min {
@@ -948,7 +947,6 @@ body {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
-  /* top: 9px; */
 }
 
 .range-toggle {
@@ -997,7 +995,6 @@ body {
 
 .form-submit,
 .form-reset {
-  display: inline-block;
   font: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -1010,27 +1007,25 @@ body {
 
 .form-submit {
   background-color: #82b3d3;
-  border-color: #82b3d3;
+  border-color: transparent;
   margin-bottom: 28px;
-  padding: 8px 50px;
+  padding: 8px 0;
 }
 
 .form-submit:hover,
 .form-submit:focus {
   background-color: #68a2ca;
-  border-color: #68a2ca;
 }
 
 .form-submit:active {
   background-color: #82b3d3;
-  border-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .form-reset {
-  padding: 8px 58px;
+  padding: 8px 0;
   background: transparent;
-  border-color: transparent;
+  border: 3px solid transparent;
 }
 
 .form-reset:hover {
@@ -1104,10 +1099,11 @@ body {
 /* Show */
 
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 7px;
   margin: 0;
-  min-width: 160px;
+  width: 160px;
 }
 
 .card-grid-toggle {
@@ -1125,10 +1121,6 @@ body {
   background-image: url("../images/show/cards.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.card-grid-toggle:not(:last-child) {
-  margin-right: 7px;
 }
 
 .card-grid-toggle-current {
@@ -1244,55 +1236,46 @@ body {
 
 .item-button-more {
   background-color: #756157;
-  border-color: #756157;
   padding: 8px 26px;
 }
 
 .item-button-more:hover,
 .item-button-more:focus {
   background-color: #615048;
-  border-color: #615048;
 }
 
 .item-button-more:active {
   background-color: #756157;
-  border-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .item-button-favorites {
   background-color: #82b3d3;
-  border-color: #82b3d3;
   padding: 8px 20px;
 }
 
 .item-button-favorites-current {
   background-color: #7db54f;
-  border-color: #7db54f;
   padding: 8px 20px;
 }
 
 .item-button-favorites:hover,
 .item-button-favorites:focus {
   background-color: #68a2ca;
-  border-color: #68a2ca;
 }
 
 .item-button-favorites:active {
   background-color: #82b3d3;
-  border-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .item-button-favorites-current:hover,
 .item-button-favorites-current:focus {
   background-color: #6c9e42;
-  border-color: #6c9e42;
 }
 
 .item-button-favorites-current:active {
   background-color: #7db54f;
-  border-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1417,9 +1400,9 @@ body {
   z-index: 2;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1462,7 +1445,7 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
   font-family: inherit;
   font-size: 30px;
   line-height: 36px;
@@ -1476,7 +1459,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 440px;
-  margin: 0 0 23px 0;
+  margin: 0 0 20px 0;
   text-align: left;
 }
 
@@ -1501,7 +1484,7 @@ body {
   border: 3px solid #83b3d3;
 }
 
-.date:active {
+.date:focus:not(:placegolder-shown) {
   border: 2px solid #000000;
 }
 
@@ -1582,12 +1565,13 @@ body {
 
 .field-button {
   margin: 0;
-  padding: 14px 10px;
+  /* padding: 14px 9px; */
   background-color: #f2f2f2;
   box-sizing: border-box;
-  border: none;
+  border: 0;
   align-items: center;
   cursor: pointer;
+  padding: 0;
 }
 
 .minus {
@@ -1598,18 +1582,19 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.minus-icon:hover,
-.plus-icon:hover {
+.field-button:hover .minus-icon,
+.field-button:hover .plus-icon {
   fill: #000000;
 }
 
-.field-button:focus {
+.field-button:focus .minus-icon,
+.field-button:focus .plus-icon {
   fill: #000000;
   border: 3px solid #83b3d3;
 }
 
-.plus-icon:active,
-.minus-icon:active {
+.field-button:active .minus-icon,
+.field-button:active .plus-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
