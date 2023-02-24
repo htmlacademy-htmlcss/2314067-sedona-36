@@ -1004,11 +1004,11 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
-  border-color: transparent;
 }
 
 .form-submit {
   background-color: #82b3d3;
+  border-color: transparent;
   margin-bottom: 28px;
   padding: 8px 0;
 }
@@ -1024,8 +1024,9 @@ body {
 }
 
 .form-reset {
-  padding: 8px 58px;
+  padding: 8px 0;
   background: transparent;
+  border: 3px solid transparent;
 }
 
 .form-reset:hover {
