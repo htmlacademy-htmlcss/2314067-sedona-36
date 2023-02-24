@@ -1445,7 +1445,7 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
   font-family: inherit;
   font-size: 30px;
   line-height: 36px;
@@ -1459,7 +1459,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 440px;
-  margin: 0 0 23px 0;
+  margin: 0 0 20px 0;
   text-align: left;
 }
 
@@ -1565,12 +1565,13 @@ body {
 
 .field-button {
   margin: 0;
-  padding: 14px 10px;
+  /* padding: 14px 9px; */
   background-color: #f2f2f2;
   box-sizing: border-box;
-  border: none;
+  border: 0;
   align-items: center;
   cursor: pointer;
+  padding: 0;
 }
 
 .minus {
@@ -1581,18 +1582,19 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.minus-icon:hover,
-.plus-icon:hover {
+.field-button:hover .minus-icon,
+.field-button:hover .plus-icon {
   fill: #000000;
 }
 
-.field-button:focus {
+.field-button:focus .minus-icon,
+.field-button:focus .plus-icon {
   fill: #000000;
   border: 3px solid #83b3d3;
 }
 
-.plus-icon:active,
-.minus-icon:active {
+.field-button:active .minus-icon,
+.field-button:active .plus-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
