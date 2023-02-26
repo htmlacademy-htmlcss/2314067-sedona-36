@@ -1400,9 +1400,9 @@ body {
   z-index: 2;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1464,7 +1464,7 @@ body {
 }
 
 .date {
-  padding: 12px 20px;
+  padding: 13px 19px;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1594,7 +1594,7 @@ body {
 .field-button:focus .minus-icon,
 .field-button:focus .plus-icon {
   fill: #000000;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .field-button:active .minus-icon,
@@ -1661,7 +1661,7 @@ body {
   left: 50%;
   z-index: 1;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 18px 18px 22px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1679,7 +1679,7 @@ body {
 .tooltip-text::before {
   position: absolute;
   top: -8px;
-  right: 119px;
+  right: 118px;
   width: 19px;
   height: 9px;
   background-image: url("../images/modal/triangular-arrow.svg");
