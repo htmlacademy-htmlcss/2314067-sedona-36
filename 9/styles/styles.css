@@ -545,8 +545,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   border-radius: 0 4px 4px 0;
-  width: 232px;
   padding: 8px 50px;
+  border: 0;
 }
 
 .newsletter-button:hover,
@@ -1147,7 +1147,8 @@ body {
 .hotels-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 18px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1166,7 +1167,7 @@ body {
 
 .hotels-container {
   padding: 0 70px 0 70px;
-  margin: 40px 0 80px 0;
+  margin: 38px 0 80px 0;
 }
 
 .hotels-card {
@@ -1303,14 +1304,14 @@ body {
 }
 
 .hotels-rating-4 {
-  width: 80px;
+  width: 88px;
   background: url("../images/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
 }
 
 .hotels-rating-3 {
-  width: 60px;
+  width: 66px;
   background: url("../images/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
@@ -1464,7 +1465,7 @@ body {
 }
 
 .date {
-  padding: 12px 20px;
+  padding: 13px 19px;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1565,7 +1566,7 @@ body {
 
 .field-button {
   margin: 0;
-  padding: 14px 9px;
+  padding: 11px 9px;
   background-color: #f2f2f2;
   box-sizing: border-box;
   border: 0;
@@ -1575,7 +1576,12 @@ body {
 
 .minus-icon,
 .plus-icon {
-  border: 3px solid transparent;
+  outline: 3px solid transparent;
+  padding: 9px 3px;
+}
+
+.plus-icon {
+  padding: 3px 3px;
 }
 
 .minus {
@@ -1594,7 +1600,7 @@ body {
 .field-button:focus .minus-icon,
 .field-button:focus .plus-icon {
   fill: #000000;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .field-button:active .minus-icon,
@@ -1661,7 +1667,7 @@ body {
   left: 50%;
   z-index: 1;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 18px 18px 22px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1679,7 +1685,7 @@ body {
 .tooltip-text::before {
   position: absolute;
   top: -8px;
-  right: 119px;
+  right: 118px;
   width: 19px;
   height: 9px;
   background-image: url("../images/modal/triangular-arrow.svg");
