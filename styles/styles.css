@@ -123,14 +123,14 @@ body {
 
 .navigation-user {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 10px;
   margin-left: auto;
-  max-width: 268px;
-  max-height: 64px;
 }
 
 .navigation-search-link {
@@ -161,7 +161,7 @@ body {
   border-radius: 10px;
   color: #ffffff;
   padding: 5px 5px 5px 4px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .navigation-search-link,
@@ -249,10 +249,11 @@ body {
   min-height: 181px;
   padding: 102px 85px 102px 85px;
   margin: 0;
+  background-color: #82b3d3;
 }
 
 .town-item {
-  background-color: #82b3d3;
+  /* background-color: #82b3d3; */
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -1548,6 +1549,9 @@ body {
   display: grid;
   grid-template-columns: 40px 31px 40px;
   margin-left: auto;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .kids-count-input,
@@ -1565,31 +1569,17 @@ body {
 }
 
 .field-button {
-  margin: 0;
-  padding: 11px 9px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
   background-color: #f2f2f2;
   box-sizing: border-box;
   border: 0;
   align-items: center;
   cursor: pointer;
-}
-
-.minus-icon,
-.plus-icon {
-  outline: 3px solid transparent;
-  padding: 9px 3px;
-}
-
-.plus-icon {
-  padding: 3px 3px;
-}
-
-.minus {
-  border-radius: 4px 0 0 4px;
-}
-
-.plus {
-  border-radius: 0 4px 4px 0;
+  width: 20px;
+  height: 20px;
 }
 
 .field-button:hover .minus-icon,
@@ -1597,10 +1587,13 @@ body {
   fill: #000000;
 }
 
+.field-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .field-button:focus .minus-icon,
 .field-button:focus .plus-icon {
   fill: #000000;
-  outline: 3px solid #83b3d3;
 }
 
 .field-button:active .minus-icon,
