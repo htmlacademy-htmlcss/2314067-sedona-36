@@ -913,7 +913,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1081,7 +1082,8 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover,
@@ -1604,7 +1606,8 @@ body {
 
 .modal-input::-webkit-outer-spin-button,
 .modal-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
