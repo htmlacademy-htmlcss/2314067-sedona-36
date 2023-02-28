@@ -484,12 +484,13 @@ body {
 
 .newsletter {
   height: 100%;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 258px 102px 258px;
   margin: 0;
 }
 
 .newsletter-index {
   background: url("../images/newsletter-background.png");
+  background-color: #000000;
   background-repeat: no-repeat;
   color: #ffffff;
 }
@@ -564,7 +565,7 @@ body {
 
 .page-footer {
   display: flex;
-  padding: 35px 70px 30px 70px;
+  padding: 38px 70px 33px 70px;
   justify-content: space-between;
 }
 
@@ -1486,7 +1487,7 @@ body {
   border: 3px solid #83b3d3;
 }
 
-.date:focus:not(:placegolder-shown) {
+.date:focus:not(:placeholder-shown) {
   border: 2px solid #000000;
 }
 
