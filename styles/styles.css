@@ -489,7 +489,7 @@ body {
 }
 
 .newsletter-index {
-  background: url("../images/newsletter-background.png");
+  background: url("../images/newsletter-background.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -663,9 +663,10 @@ body {
 }
 
 .filter-index {
-  background: url("../images/catalog-background.png");
+  background: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-color: #000000;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -1080,6 +1081,7 @@ body {
   border-radius: 4px;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
   background-position: right 20px center;
   cursor: pointer;
   -webkit-appearance: none;
